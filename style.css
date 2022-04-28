@@ -1,0 +1,43 @@
+* {
+    margin:0;
+    padding:0;
+}
+body {
+    padding:50px;
+}
+h1 {
+    text-align:center;
+    margin-bottom:40px;
+}
+form {
+    width:450px;
+    margin:auto;
+}
+input {
+    width:100%;
+    box-sizing:border-box;
+    padding:10px;
+    border-radius:5px;
+    box-shadow:none;
+    outline:none;
+    border:2px solid rgb(158, 156, 156);
+}
+p {
+    margin:10px 0;
+    color:orange;
+    height:0;
+    opacity:0;
+}
+input.valid {
+    border-color:green;
+}
+input.invalid {
+    border-color:orange;
+}
+input.invalid + p {
+    height:auto;
+    opacity:1;
+}
+input.valid + p {
+    opacity:0;
+}
